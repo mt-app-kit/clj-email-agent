@@ -11,7 +11,7 @@
 
 (defn send-message!
   ; @param (map)(opt) server-props
-  ;  :host (string)(opt)
+  ; {:host (string)(opt)
   ;  :password (string)(opt)
   ;  :port (integer or string)(opt)
   ;  :ssl (boolean)(opt)
