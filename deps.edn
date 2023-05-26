@@ -1,11 +1,11 @@
 
 {:paths ["source-code/clj"]
  :deps  {bithandshake/cljc-fruits           {:git/url "https://github.com/bithandshake/cljc-fruits"
-                                             :sha     "98b3fec8a2fb6a4ae8a235eddd161f966787a684"}
+                                             :sha     "9e50a053092142524f4a19b024cad55cb381bb93"}
          bithandshake/cljc-hiccup-converter {:git/url "https://github.com/bithandshake/cljc-hiccup-converter"
-                                             :sha     "de92c6067d8c11a98d11765dec79f45560f034bf"}
+                                             :sha     "93202af53d7160e17cda501627455ba223e8dd02"}
          bithandshake/cljc-io               {:git/url "https://github.com/bithandshake/cljc-io"
-                                             :sha     "de92c6067d8c11a98d11765dec79f45560f034bf"}
+                                             :sha     "93202af53d7160e17cda501627455ba223e8dd02"}
          bithandshake/cljc-validator        {:git/url "https://github.com/bithandshake/cljc-validator"
-                                             :sha     "de92c6067d8c11a98d11765dec79f45560f034bf"}
+                                             :sha     "93202af53d7160e17cda501627455ba223e8dd02"}
          com.draines/postal                 {:mvn/version "2.0.4"}}}
