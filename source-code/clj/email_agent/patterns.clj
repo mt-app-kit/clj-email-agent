@@ -33,7 +33,7 @@
 (def MESSAGE-PROPS-PATTERN
      {:body    {:not* empty?
                 :or*  [map? string? hiccup? vector?]
-                :e*   ":body must be a nonempty map, string, hiccup or vector!"}
+                :e*   ":body must be a nonempty map, a string, a hiccup or a vector!"}
       :from    {:f*   string?
                 :not* empty?
                 :e*   ":to must be a nonempty string!"}
