@@ -67,9 +67,9 @@
   ;                        (html-body "<html><body>Hello World!</body></html>")] ...})
   ;
   ; @return (map)
-  ; {:code ()
-  ;  :error ()
-  ;  :message ()}
+  ; {:code (integer)
+  ;  :error (?)
+  ;  :message (?)}
   ([message-props]
    (send-message! {} message-props))
 
@@ -78,14 +78,13 @@
         (v/valid? message-props {:pattern* patterns/MESSAGE-PROPS-PATTERN :prefix* "message-props"})
         (let [server-props  (prototypes/server-props-prototype  server-props)
               message-props (prototypes/message-props-prototype message-props)]
-             (try (postal.core/send-message {:host    (:host     server-props)
-                                             :pass    (:password server-props)
-                                             :port    (:port     server-props)
-                                             :ssl     (:ssl      server-props)
-                                             :tls     (:tls      server-props)
-                                             :user    (:username server-props)}
-                                            {:body    (:body     message-props)
-                                             :from    (:from     message-props)
-                                             :subject (:subject  message-props)
-                                             :to      (:to       message-props)})
-                  (catch Exception e (println e)))))))
+             (postal.core/send-message {:host    (:host     server-props)
+                                        :pass    (:password server-props)
+                                        :port    (:port     server-props)
+                                        :ssl     (:ssl      server-props)
+                                        :tls     (:tls      server-props)
+                                        :user    (:username server-props)}
+                                       {:body    (:body     message-props)
+                                        :from    (:from     message-props)
+                                        :subject (:subject  message-props)
+                                        :to      (:to       message-props)})))))
