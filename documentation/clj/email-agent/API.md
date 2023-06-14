@@ -328,7 +328,7 @@ the mime-type parameter is optional.
 
 ```
 @param (map)(opt) server-props
- :host (string)(opt)
+{:host (string)(opt)
  :password (string)(opt)
  :port (integer or string)(opt)
  :ssl (boolean)(opt)
@@ -398,9 +398,9 @@ the mime-type parameter is optional.
 
 ```
 @return (map)
-{:code ()
- :error ()
- :message ()}
+{:code (integer)
+ :error (?)
+ :message (?)}
 ```
 
 <details>
@@ -416,17 +416,16 @@ the mime-type parameter is optional.
         (v/valid? message-props {:pattern* patterns/MESSAGE-PROPS-PATTERN :prefix* "message-props"})
         (let [server-props  (prototypes/server-props-prototype  server-props)
               message-props (prototypes/message-props-prototype message-props)]
-             (try (postal.core/send-message {:host    (:host     server-props)
-                                             :pass    (:password server-props)
-                                             :port    (:port     server-props)
-                                             :ssl     (:ssl      server-props)
-                                             :tls     (:tls      server-props)
-                                             :user    (:username server-props)}
-                                            {:body    (:body     message-props)
-                                             :from    (:from     message-props)
-                                             :subject (:subject  message-props)
-                                             :to      (:to       message-props)})
-                  (catch Exception e (println e)))))))
+             (postal.core/send-message {:host    (:host     server-props)
+                                        :pass    (:password server-props)
+                                        :port    (:port     server-props)
+                                        :ssl     (:ssl      server-props)
+                                        :tls     (:tls      server-props)
+                                        :user    (:username server-props)}
+                                       {:body    (:body     message-props)
+                                        :from    (:from     message-props)
+                                        :subject (:subject  message-props)
+                                        :to      (:to       message-props)})))))
 ```
 
 </details>
@@ -474,7 +473,7 @@ the mime-type parameter is optional.
 ```
 (defn sender-label
   [name email-address]
-  (str "name <"email-address">"))
+  (str name " <"email-address">"))
 ```
 
 </details>

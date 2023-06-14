@@ -7,6 +7,9 @@
 
 ; @ignore
 ;
+; @description
+; https://github.com/bithandshake/cljc-validator
+;
 ; @constant (map)
 (def SERVER-PROPS-PATTERN
      {:host     {:opt* true
@@ -28,6 +31,9 @@
                  :e*   ":username must be a nonempty string!"}})
 
 ; @ignore
+;
+; @description
+; https://github.com/bithandshake/cljc-validator
 ;
 ; @constant (map)
 (def MESSAGE-PROPS-PATTERN

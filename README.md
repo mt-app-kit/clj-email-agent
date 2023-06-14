@@ -35,7 +35,7 @@ You can track the changes of the <strong>clj-email-agent</strong> library [here]
 
 ### How to send an email?
 
-The [`email-agent.api/send-email!`](documentation/clj/email-agent/API.md/#send-email)
+The [`email-agent.api/send-message!`](documentation/clj/email-agent/API.md/#send-message)
 function sends an email message.
 
 ```
