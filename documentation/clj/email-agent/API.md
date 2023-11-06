@@ -1,5 +1,9 @@
 
-# email-agent.api Clojure namespace
+### email-agent.api
+
+Functional documentation of the email-agent.api Clojure namespace
+
+---
 
 ##### [README](../../../README.md) > [DOCUMENTATION](../../COVER.md) > email-agent.api
 
@@ -20,6 +24,8 @@
 - [sender-label](#sender-label)
 
 - [text-body](#text-body)
+
+---
 
 ### acknowledge?
 
@@ -47,7 +53,7 @@ Returns true if the message has been sent without errors.
 ```
 (defn acknowledge?
   [{:keys [code]}]
-  (= code 0))
+  (zero? code))
 ```
 
 </details>
@@ -541,5 +547,5 @@ the mime-type parameter is optional.
 
 ---
 
-This documentation is generated with the [clj-docs-generator](https://github.com/bithandshake/clj-docs-generator) engine.
+<sub>This documentation is generated with the [clj-docs-generator](https://github.com/bithandshake/clj-docs-generator) engine.</sub>
 
