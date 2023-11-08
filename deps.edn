@@ -3,10 +3,10 @@
  :deps  {bithandshake/cljc-fruits           {:git/url "https://github.com/bithandshake/cljc-fruits"
                                              :sha     "77103150fe4f329c5d4401a779485d034c014e87"}
          bithandshake/cljc-hiccup-converter {:git/url "https://github.com/bithandshake/cljc-hiccup-converter"
-                                             :sha     "cbdd7cc5e61bb437944d231c40cf6c224b229fb4"}
+                                             :sha     "d96c1ac4389df5f9691bd7c2333ac4eb5b341047"}
          bithandshake/cljc-io               {:git/url "https://github.com/bithandshake/cljc-io"
-                                             :sha     "cbdd7cc5e61bb437944d231c40cf6c224b229fb4"}
+                                             :sha     "d96c1ac4389df5f9691bd7c2333ac4eb5b341047"}
          bithandshake/cljc-validator        {:git/url "https://github.com/bithandshake/cljc-validator"
-                                             :sha     "cbdd7cc5e61bb437944d231c40cf6c224b229fb4"}
+                                             :sha     "d96c1ac4389df5f9691bd7c2333ac4eb5b341047"}
          com.draines/postal                 {:mvn/version "2.0.4"}
          org.clojure/clojure                {:mvn/version "1.10.1"}}}
