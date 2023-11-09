@@ -3,7 +3,7 @@
  :deps  {bithandshake/cljc-fruits           {:git/url "https://github.com/bithandshake/cljc-fruits"
                                              :sha     "aeab860b3dd44aec44b99c2ddde2feb8b10013df"}
          bithandshake/cljc-hiccup-converter {:git/url "https://github.com/bithandshake/cljc-hiccup-converter"
-                                             :sha     "aaaa"}
+                                             :sha     "e8c334a5de30bd30ab2ee660fd3e9e7d9ea4e5f4"}
          bithandshake/cljc-io               {:git/url "https://github.com/bithandshake/cljc-io"
                                              :sha     "be065f2e1a68bfe4bf51b6044509dff5943e1dd1"}
          bithandshake/cljc-validator        {:git/url "https://github.com/bithandshake/cljc-validator"
