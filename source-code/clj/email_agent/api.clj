@@ -6,10 +6,10 @@
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
 
-; email-agent.side-effects
+; @redirect (email-agent.side-effects)
 (def send-message! side-effects/send-message!)
 
-; email-agent.utils
+; @redirect (email-agent.utils)
 (def acknowledge?         utils/acknowledge?)
 (def sender-label         utils/sender-label)
 (def inline-file-body     utils/inline-file-body)
