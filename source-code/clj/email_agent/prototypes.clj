@@ -1,9 +1,9 @@
 
 (ns email-agent.prototypes
     (:require [email-agent.utils :as utils]
-              [hiccup.api        :refer [hiccup?]]
-              [mixed.api         :as mixed]
-              [vector.api        :as vector]))
+              [fruits.hiccup.api :refer [hiccup?]]
+              [fruits.mixed.api  :as mixed]
+              [fruits.vector.api :as vector]))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
