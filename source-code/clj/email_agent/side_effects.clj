@@ -1,6 +1,6 @@
 
 (ns email-agent.side-effects
-    (:require [email-agent.patterns   :as patterns]
+    (:require [email-agent.tests :as tests]
               [email-agent.prototypes :as prototypes]
               [email-agent.utils      :as utils]
               [postal.core            :as postal.core]
@@ -74,8 +74,8 @@
    (send-message! {} message-props))
 
   ([server-props message-props]
-   (and (v/valid? server-props  {:pattern* patterns/SERVER-PROPS-PATTERN  :prefix* "server-props"})
-        (v/valid? message-props {:pattern* patterns/MESSAGE-PROPS-PATTERN :prefix* "message-props"})
+   (and (v/valid? server-props  tests/SERVER-PROPS-TEST  {:prefix "server-props"})
+        (v/valid? message-props tests/MESSAGE-PROPS-TEST {:prefix "message-props"})
         (let [server-props  (prototypes/server-props-prototype  server-props)
               message-props (prototypes/message-props-prototype message-props)]
              (postal.core/send-message {:host    (:host     server-props)

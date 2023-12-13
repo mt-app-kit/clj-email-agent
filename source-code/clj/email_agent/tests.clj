@@ -1,5 +1,5 @@
 
-(ns email-agent.patterns
+(ns email-agent.tests
     (:require [fruits.hiccup.api :refer [hiccup?]]))
 
 ;; ----------------------------------------------------------------------------
@@ -11,7 +11,7 @@
 ; https://github.com/bithandshake/cljc-validator
 ;
 ; @constant (map)
-(def SERVER-PROPS-PATTERN
+(def SERVER-PROPS-TEST
      {:host     {:opt* true
                  :f*   string?
                  :not* empty?
@@ -36,7 +36,7 @@
 ; https://github.com/bithandshake/cljc-validator
 ;
 ; @constant (map)
-(def MESSAGE-PROPS-PATTERN
+(def MESSAGE-PROPS-TEST
      {:body    {:not* empty?
                 :or*  [map? string? hiccup? vector?]
                 :e*   ":body must be a nonempty map, a string, a hiccup or a vector!"}
