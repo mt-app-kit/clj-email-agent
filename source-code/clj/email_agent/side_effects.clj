@@ -1,7 +1,7 @@
 
 (ns email-agent.side-effects
-    (:require [email-agent.tests :as tests]
-              [email-agent.prototypes :as prototypes]
+    (:require [email-agent.prototypes :as prototypes]
+              [email-agent.tests      :as tests]
               [email-agent.utils      :as utils]
               [postal.core            :as postal.core]
               [validator.api          :as v]))
