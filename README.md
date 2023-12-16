@@ -19,7 +19,7 @@ Check out the latest commit on the [release branch](https://github.com/bithandsh
 
 ### Documentation
 
-The <strong>clj-email-agent</strong> functional documentation is [available here](documentation/COVER.md).
+The <strong>clj-email-agent</strong> functional documentation is [available here](https://bithandshake.github.io/clj-email-agent).
 
 ### Changelog
 
