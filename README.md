@@ -10,7 +10,7 @@ based on the [dewr / postal] library.
 
 ```
 {:deps {bithandshake/clj-email-agent {:git/url "https://github.com/bithandshake/clj-email-agent"
-                                      :sha     "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}}
+                                      :sha     "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}}}
 ```
 
 ### Current version
