@@ -3,8 +3,7 @@
 
 ### Overview
 
-The <strong>clj-email-agent</strong> is a simple email agent for Clojure projects
-based on the [dewr / postal] library.
+The <strong>clj-email-agent</strong> is a simple email agent for Clojure projects based on the [dewr / postal] library.
 
 ### deps.edn
 
