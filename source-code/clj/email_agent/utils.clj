@@ -14,6 +14,8 @@
   ;
   ; @usage
   ; (acknowledge? (send-message! {...} {...}))
+  ; =>
+  ; true
   ;
   ; @return (boolean)
   [{:keys [code]}]
@@ -29,7 +31,7 @@
   ; @usage
   ; (sender-label "Sender" "sender@email.com")
   ;
-  ; @example
+  ; @usage
   ; (sender-label "Sender" "sender@email.com")
   ; =>
   ; "Sender <sender@email.com>"
@@ -53,24 +55,15 @@
   ;
   ; @usage
   ; (inline-file-body "/my-file.pdf")
-  ;
-  ; @usage
-  ; (inline-file-body "/my-file.pdf" "application/pdf")
-  ;
-  ; @usage
-  ; (inline-file-body (java.io.File. "/my-file.pdf") "application/pdf")
-  ;
-  ; @example
-  ; (inline-file-body "/my-file.pdf")
   ; =>
   ; {:content (java.io.File "/my-file.pdf") :content-type "application/pdf" :type :inline}
   ;
-  ; @example
+  ; @usage
   ; (inline-file-body "/my-file.pdf" "application/pdf")
   ; =>
   ; {:content (java.io.File "/my-file.pdf") :content-type "application/pdf" :type :inline}
   ;
-  ; @example
+  ; @usage
   ; (inline-file-body (java.io.File. "/my-file.pdf") "application/pdf")
   ; =>
   ; {:content (java.io.File "/my-file.pdf") :content-type "application/pdf" :type :inline}
@@ -99,16 +92,10 @@
   ;
   ; @usage
   ; (attachment-file-body "/my-file.pdf")
-  ;
-  ; @usage
-  ; (attachment-file-body (java.io.File. "/my-file.pdf"))
-  ;
-  ; @example
-  ; (attachment-file-body "/my-file.pdf")
   ; =>
   ; {:content (java.io.File "/my-file.pdf") :type :attachment}
   ;
-  ; @example
+  ; @usage
   ; (attachment-file-body (java.io.File. "/my-file.pdf"))
   ; =>
   ; {:content (java.io.File "/my-file.pdf") :type :attachment}
@@ -126,9 +113,6 @@
   ;
   ; @usage
   ; (text-body "My text")
-  ;
-  ; @example
-  ; (text-body "My text")
   ; =>
   ; {:content "My text" :type "text/plain"}
   ;
@@ -143,9 +127,6 @@
   ;
   ; @usage
   ; (hiccup-body [:html ...])
-  ;
-  ; @example
-  ; (hiccup-body [:html ...])
   ; =>
   ; {:content "<html>...</html>" :type "text/html"}
   ;
@@ -159,9 +140,6 @@
   ; @param (*) content
   ;
   ; @usage
-  ; (html-body "<html>...</html>")
-  ;
-  ; @example
   ; (html-body "<html>...</html>")
   ; =>
   ; {:content "<html>...</html>" :type "text/html"}
