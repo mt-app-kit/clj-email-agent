@@ -10,6 +10,9 @@
 ;; ----------------------------------------------------------------------------
 
 (defn send-message!
+  ; @description
+  ; Sends an email message.
+  ;
   ; @param (map)(opt) server-props
   ; {:host (string)(opt)
   ;  :password (string)(opt)

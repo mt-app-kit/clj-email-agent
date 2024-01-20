@@ -44,11 +44,12 @@
 ;; ----------------------------------------------------------------------------
 
 (defn inline-file-body
-  ; @description
-  ; The content could be a java.io.File object or a filepath string that will
-  ; be used as a source path for the File object.
-  ; If you pass the content as a filepath string and it has a correct extension,
-  ; the mime-type parameter is optional.
+  ; @note
+  ; java.io.File objects and filepath strings are both accepted as 'content' parameter.
+  ;
+  ; @note
+  ; If the 'content' parameter is provided as a filepath string and it has a valid extension,
+  ; the 'mime-type' parameter is optional.
   ;
   ; @param (java.io.File object or string) content
   ; @param (string)(opt) mime-type
@@ -84,9 +85,8 @@
        {:content content                 :content-type mime-type :type :inline})))
 
 (defn attachment-file-body
-  ; @description
-  ; The content could be a java.io.File object or a filepath string that will
-  ; be used as a source path for the File object.
+  ; @note
+  ; java.io.File objects and filepath strings are both accepted as 'content' parameter.
   ;
   ; @param (java.io.File object or string) content
   ;
