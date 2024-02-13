@@ -8,9 +8,9 @@
 
 ; @tutorial How to send an email?
 ;
-; The [email-agent.api/send-message!](#send-message_) function sends an email message.
+; The [send-message!](#send-message_) function sends an email message.
 ;
-; @code
+; @usage
 ; (send-message! {:host     "smtp.my-host.com"
 ;                 :password "..."
 ;                 :username "my-user@my-host.com"
@@ -20,19 +20,19 @@
 ;                 :subject  "Greatings"
 ;                 :to       "receiver@email.com"})
 ;
-; @code
+; @usage
 ; (send-message! {...}
 ;                {:body "Hello World!" ...})
 ;
-; @code
+; @usage
 ; (send-message! {...}
 ;                {:body [:html [:body [:div "Hello World!"]]] ...})
 ;
-; @code
+; @usage
 ; (send-message! {...}
 ;                {:body (text-body "Hello World!") ...})
 ;
-; @code
+; @usage
 ; (send-message! {...}
 ;                {:body ["Hello World!"
 ;                        [:html [:body [:div "Hello World!"]]]
@@ -46,17 +46,20 @@
 ;                        (inline-file-body     "my-file.pdf" "application/pdf")
 ;                        (inline-file-body     (java.io.File. "my-file.pdf") "application/pdf")] ...})
 ;
-; @code
+; @usage
 ; (send-message! {...}
 ;                {:body [:alternative
 ;                        (text-body "Hello World!")
 ;                        (html-body "<html><body>Hello World!</body></html>")] ...})
 
+;; ----------------------------------------------------------------------------
+;; ----------------------------------------------------------------------------
+
 ; @tutorial How to acknowledge an email sending?
 ;
-; The [email-agent.api/acknowledge?](#acknowledge_) function returns TRUE if the message has been sent without errors.
+; The [acknowledge?](#acknowledge_) function returns TRUE if the message has been sent without errors.
 ;
-; @code
+; @usage
 ; (acknowledge? (send-message! {...} {...}))
 
 ;; ----------------------------------------------------------------------------
