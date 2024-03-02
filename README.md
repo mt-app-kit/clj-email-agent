@@ -8,17 +8,17 @@ The <strong>clj-email-agent</strong> is a simple email agent for Clojure project
 ### deps.edn
 
 ```
-{:deps {mt-app-kit/clj-email-agent {:git/url "https://github.com/mt-app-kit/clj-email-agent"
-                                    :sha     "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}}}
+{:deps {mt-server-kit/clj-email-agent {:git/url "https://github.com/mt-server-kit/clj-email-agent"
+                                       :sha     "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}}}
 ```
 
 ### Current version
 
-Check out the latest commit on the [release branch](https://github.com/mt-app-kit/clj-email-agent/tree/release).
+Check out the latest commit on the [release branch](https://github.com/mt-server-kit/clj-email-agent/tree/release).
 
 ### Documentation
 
-The <strong>clj-email-agent</strong> functional documentation is [available here](https://mt-app-kit.github.io/clj-email-agent).
+The <strong>clj-email-agent</strong> functional documentation is [available here](https://mt-server-kit.github.io/clj-email-agent).
 
 ### Changelog
 
