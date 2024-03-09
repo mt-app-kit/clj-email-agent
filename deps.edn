@@ -7,6 +7,6 @@
          bithandshake/cljc-validator      {:git/url "https://github.com/bithandshake/cljc-validator"
                                            :sha     "df35e91cee8a7e5f5914d69089c0ed7cc1f97930"}
          mt-app-kit/cljc-hiccup-converter {:git/url "https://github.com/mt-app-kit/cljc-hiccup-converter"
-                                           :sha     "778389dd25c5bb328414343fac83e5d00994138d"}
+                                           :sha     "754a955de866d9b5a2e388915c9477149ea62651"}
          com.draines/postal               {:mvn/version "2.0.4"}
          org.clojure/clojure              {:mvn/version "1.10.1"}}}
