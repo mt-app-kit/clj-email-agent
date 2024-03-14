@@ -16,10 +16,10 @@ The <strong>clj-email-agent</strong> is a simple email agent for Clojure project
 
 Check out the latest commit on the [release branch](https://github.com/mt-server-kit/clj-email-agent/tree/release).
 
-### Documentation
-
-The <strong>clj-email-agent</strong> functional documentation is [available here](https://mt-server-kit.github.io/clj-email-agent).
-
 ### Changelog
 
 You can track the changes of the <strong>clj-email-agent</strong> library [here](CHANGES.md).
+
+# Documentation
+
+The <strong>clj-email-agent</strong> functional documentation is [available here](https://mt-server-kit.github.io/clj-email-agent).
