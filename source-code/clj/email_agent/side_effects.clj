@@ -33,9 +33,9 @@
   ;                 :username "my-user@my-host.com"
   ;                 :port     465}
   ;                {:body     "Hello World!"
-  ;                 :from     "sender@email.com"
+  ;                 :from     "sender@provider.com"
   ;                 :subject  "Greatings"
-  ;                 :to       "receiver@email.com"})
+  ;                 :to       "receiver@provider.com"})
   ;
   ; @usage
   ; (send-message! {...}
@@ -77,8 +77,8 @@
    (send-message! {} message-props))
 
   ([server-props message-props]
-   (and (v/valid? server-props  tests/SERVER-PROPS-TEST  {:prefix "server-props"})
-        (v/valid? message-props tests/MESSAGE-PROPS-TEST {:prefix "message-props"})
+   (and (v/valid? server-props  [tests/SERVER-PROPS-TEST]  {:prefix "server-props"})
+        (v/valid? message-props [tests/MESSAGE-PROPS-TEST] {:prefix "message-props"})
         (let [server-props  (prototypes/server-props-prototype  server-props)
               message-props (prototypes/message-props-prototype message-props)]
              (postal.core/send-message {:host    (:host     server-props)

@@ -6,9 +6,7 @@
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
 
-; @tutorial How to send an email?
-;
-; The [send-message!](#send-message_) function sends an email message.
+; @tutorial Demo
 ;
 ; @usage
 ; (send-message! {:host     "smtp.my-host.com"
@@ -16,9 +14,9 @@
 ;                 :username "my-user@my-host.com"
 ;                 :port     465}
 ;                {:body     "Hello World!"
-;                 :from     "sender@email.com"
+;                 :from     "sender@provider.com"
 ;                 :subject  "Greatings"
-;                 :to       "receiver@email.com"})
+;                 :to       "receiver@provider.com"})
 ;
 ; @usage
 ; (send-message! {...}
@@ -57,10 +55,10 @@
 
 ; @tutorial How to acknowledge an email sending?
 ;
-; The [acknowledge?](#acknowledge_) function returns TRUE if the message has been sent without errors.
+; The [acknowledged?](#acknowledge_) function returns TRUE if the message has been sent without errors.
 ;
 ; @usage
-; (acknowledge? (send-message! {...} {...}))
+; (acknowledged? (send-message! {...} {...}))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
@@ -69,7 +67,7 @@
 (def send-message! side-effects/send-message!)
 
 ; @redirect (email-agent.utils/*)
-(def acknowledge?         utils/acknowledge?)
+(def acknowledged?        utils/acknowledged?)
 (def sender-label         utils/sender-label)
 (def inline-file-body     utils/inline-file-body)
 (def attachment-file-body utils/attachment-file-body)

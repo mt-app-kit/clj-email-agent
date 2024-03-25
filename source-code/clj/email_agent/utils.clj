@@ -6,14 +6,14 @@
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
 
-(defn acknowledge?
+(defn acknowledged?
   ; @description
   ; Returns true if the message has been sent without errors.
   ;
   ; @param (*) n
   ;
   ; @usage
-  ; (acknowledge? (send-message! {...} {...}))
+  ; (acknowledged? (send-message! {...} {...}))
   ; =>
   ; true
   ;
@@ -29,12 +29,12 @@
   ; @param (string) email-address
   ;
   ; @usage
-  ; (sender-label "Sender" "sender@email.com")
+  ; (sender-label "Sender" "sender@provider.com")
   ;
   ; @usage
-  ; (sender-label "Sender" "sender@email.com")
+  ; (sender-label "Sender" "sender@provider.com")
   ; =>
-  ; "Sender <sender@email.com>"
+  ; "Sender <sender@provider.com>"
   ;
   ; @return (string)
   [name email-address]
