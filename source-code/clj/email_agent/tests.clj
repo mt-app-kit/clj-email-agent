@@ -8,7 +8,7 @@
 ; @ignore
 ;
 ; @links
-; [cljc-validator](github.com/mt-utilities/cljc-validator)
+; [cljc-validator](https://github.com/mt-utilities/cljc-validator)
 ;
 ; @constant (map)
 (def SERVER-PROPS-TEST
@@ -33,7 +33,7 @@
 ; @ignore
 ;
 ; @links
-; [cljc-validator](github.com/mt-utilities/cljc-validator)
+; [cljc-validator](https://github.com/mt-utilities/cljc-validator)
 ;
 ; @constant (map)
 (def MESSAGE-PROPS-TEST
